@@ -111,7 +111,7 @@ namespace TcpServerSample
             {
                 encoding = Encoding.GetEncoding(encodingName);
             }
-            catch
+            catch (ArgumentException)
             {
                 encoding = Encoding.UTF8;
             }
